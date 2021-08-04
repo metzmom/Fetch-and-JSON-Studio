@@ -10,7 +10,18 @@
     <script src="script.js"></script>
     <h1>Astronauts</h1>
     <div id="container">
+      const div = document.getElementById("container");
+                    div.innerHTML = `
+                     <ul>
+                        <li>Hours in space: ${json.temp}</li>
+                        <li>Active: ${json.windSpeed}</li>
+                        <li>Skills: ${json.status}</li>
+                        <li>Chance of Precip ${json.chanceOfPrecipitation}</li>
+                     </ul>
+                  `;
         <!-- List of astronauts will be added here dynamically -->
     </div>
   </body>
 </html>
+
+
